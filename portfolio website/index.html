@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern site</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Rubik', sans-serif;
+            
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            /* background-image: linear-gradient(top left, #fff, #0a5261); */
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+            background-image: linear-gradient(to top, #fff 80%, #c3f5ff 30%);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            margin: 15px;
+            padding-left: 50px;
+            text-decoration: none;
+            font-size: large;
+            color: black;
+            text-transform: uppercase;
+            font-size: 17px;
+            font-weight: 900;
+        }
+
+        nav a:first-child {
+            color: blue;
+        }
+
+        .logo {
+            background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+            width:40%;
+            color: white;
+            padding-left: 20px;
+            box-sizing: border-box;
+            
+        }
+/* logo animation */
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: front 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes front {
+            from {
+                padding-left: 40px;
+            }
+
+            to {
+                padding-right: 40px;
+            }
+        }
+/* menu underline hover effect */
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 110%;
+            left:0;
+            width: 0;
+            height: 2px;
+            border-bottom: 2px solid blk;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover:before {
+            width: 100%;
+        }
+
+        main {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rightside {
+            margin-right: 100px;
+            margin-top: 30px;
+            max-width: 400px;
+            height: auto;
+            border-radius: 47% 53% 70% 30% / 16% 35% 65% 84%;
+            background-color: blueviolet;
+        }
+
+        .leftside {
+            margin-top: 50px;
+            margin-left: 100px;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .leftside h3 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .leftside h3::after {
+            content: "";
+            width: 450px;
+            height: 4px;
+            position: absolute;
+            top: 70%;
+            left: 30%;
+            background-color: black;
+        }
+
+        .leftside h1 {
+            margin-top: 20px;
+            margin-bottom: 70px;
+            font-size: 70px;
+        }
+
+        .leftside h2 {
+            margin-bottom: 35px;
+            font-weight: 500px;
+            word-spacing: 40px
+        }
+
+        .leftside a{
+            
+            border-radius: 4px;
+            display: inline-block;
+            margin: 50px;
+            font-size: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: violet;
+            height: 20px;
+            
+            
+        
+        }
+        .leftside .btn1 {
+            width: 150px;
+            margin-left:2px ;
+            color:black;
+
+        }
+
+        .leftside .btn2{
+            width: 200px;
+            /* background-color: black; */
+            color: black
+        }
+
+        .leftside .btn1:hover{
+            background-color: blue;
+        }
+
+        .leftside .btn2:hover{
+           background-color: blue;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="logo">
+                <h1>MODERN WEBSITE</h1>
+            </div>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">SERVICES</a>
+                <a href="#">GALLARY</a>
+                <a href="#">POTFOLIO</a>
+                <a href="#">CONTACT US</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="leftside">
+            <h3>HELLO</h3>
+            <h1>COME AND ENJOY</h1>
+            <h2>WEB DEVELOPER AND YOUTUBER</h2>
+            <a href="#" class="btn1">HIRE ME</a>
+            <a href="#" class="btn2">CONTACT ME</a>
+        </div>
+        <div class="rightside">
+            <img src="image.png" height="350px">
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+if 2 classes are utilizing same properties then instead of putting same properties on different classses just mention two classes together by comma and apply the properties {.btn1, btn2} -->
