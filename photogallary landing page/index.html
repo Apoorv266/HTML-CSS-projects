@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background.png);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+
+        .menu {
+            padding-left: 500px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 30px;
+            font-size: 15;
+
+        }
+
+        .menu2 {
+            padding-right: 50px;
+        }
+
+        .logo {
+            padding-left: 50px;
+        }
+
+        .col {
+            display: flex;
+            height: 88%;
+            align-items: center;
+        }
+
+        .main {
+            flex-basis: 50%;
+        }
+
+        .main h1 {
+            font-size: 100px;
+            color: white;
+        }
+
+        .main p {
+            line-height: 15px;
+            font-size: 11px;
+            color: white;
+        }
+
+        .main button {
+            color: #000;
+            width: 180px;
+            font-size: 12px;
+            padding:12px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+
+        }
+
+        .items{
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: auto auto;
+            grid-template-row: auto auto;
+            margin-left: 150px;
+            margin-top: 50px;
+            
+            
+        }
+
+        .items img:hover{
+            transform: translateY(-10px);
+        }
+
+        .items img{
+            border-radius: 30px;
+            transition: transform 0.5s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" width="50px">
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <div class="menu2">
+                <img src="menu.png" width="50px">
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="col">
+            <div class="main">
+                <h1>SAHARA</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perferendis nobis est modi,
+                    veritatis ratione eveniet tempora iste accusamus impedit officia facere voluptates qui reprehenderit
+                    itaque sed et consectetur iusto tempore aliquid beatae maxime dolores.</p>
+                <button type="button">EXPLORE
+                </button>
+            </div>
+            <div class="items">
+                <img src="pic-1.png" height="200px">
+                <img src="pic-2.png" height="200px">
+                <img src="pic-3.png" height="200px">
+                <img src="pic-4.png" height="200px">
+            </div>
+
+        
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+<!-- properties learned
+
+1.Flex-basis- tells till where the flex item come in the page..for eg 50% flex basis means flex item will cover 50% space. -->
