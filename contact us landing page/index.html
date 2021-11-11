@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background-color: aquamarine;
+            font-size: 14px;
+
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .contactbox {
+            background: #ffffff;
+            display: flex;
+        }
+
+        .contactleft {
+            flex-basis: 60%;
+            padding: 40px 60px;
+        }
+
+        .contactright {
+            flex-basis: 40%;
+            padding: 40px 60px;
+            background: #1c00b5;
+            color: white;
+        }
+
+        h1{
+            margin-bottom: 10px;
+
+        }
+
+        .container p{
+            margin-bottom: 40px;
+        }
+
+        .inputrow{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .inputrow .inputgroup{
+            flex-basis: 45%;
+        }
+
+        input{
+            width: 100%;
+            border: none; 
+            border-bottom: 1px solid #ccc;
+            padding-bottom:5px;
+            outline: none;
+        }
+
+        textarea{
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        label{
+            margin-bottom: 10px;
+            display: block;
+        }
+        button{
+            background: #1c00b5;
+            width: 100px;
+            border: none;
+            outline: ;
+            color: white;
+            height: 35px;
+            border-radius: 30px;
+            margin: 20px;
+        }
+
+        .contactleft h3{
+            font-weight: 600;
+            color: #1c00b5;
+            margin-bottom: 30px;
+        }
+
+        .contactright h3{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        tr td:first-child{
+            padding-right:20px;
+        }
+
+        tr td{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sequi magnam doloremque hic quam soluta perferendis
+            ad aliquid, error laboriosam ipsam.</p>
+        <div class="contactbox">
+            <div class="contactleft">
+                <h3>send your request</h3>
+                <form>
+                    <div class="inputrow">
+                        <div class="inputgroup">
+                            <label>Name</label>
+                            <input type="text" placeholder="Apoorv Sharma">
+                        </div>
+                        <div class="inputgroup">
+                            <label>Phone</label>
+                            <input type="text" placeholder="2459428054">
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="inputgroup">
+                            <label>Email</label>
+                            <input type="text" placeholder="@gmail.com">
+                        </div>
+                        <div class="inputgroup">
+                            <label>Subject</label>
+                            <input type="text" placeholder="product enquiry">
+                        </div>
+                    </div>
+                    <label>message</label>
+                    <textarea rows="5" placeholder="enter the message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contactright">
+            <h3>Reach us</h3>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>contactus@gmail.com</td>
+
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>3252052098</td>
+
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>122/43 , New York</td>
+
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
