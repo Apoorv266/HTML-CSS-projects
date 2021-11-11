@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK WEBSITE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url(photo_site_img/background.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .menu {
+            font-size: 20px;
+            margin-left: 500px;
+
+        }
+
+        .menu a {
+            margin: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .menu a:hover {
+            color: #ff5361;
+        }
+
+        .button {
+            background: #ff5361;
+            padding: 10px 40px;
+            border-radius: 30px;
+            margin-left: 30px;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .main input {
+            width: 50%;
+            height: 55px;
+            border-radius: 30px;
+            border: none;
+            padding: 0 30px;
+            outline: none;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .gallary {
+            padding-left: 10%;
+            padding-right: 10%;
+            box-sizing: border-box;
+            margin: 40px 0;
+        }
+
+        .gallary h2, .customer h2,.about h2 {
+            color: black;
+            font-weight: 900;
+            font-size: 26px;
+            margin: 20px 12px;
+            text-align: center;
+        }
+
+        .block {
+            display: flex;
+            flex-flow: column wrap;
+            height: 1500px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .blockinner {
+            width: 33.33%;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        .blockinner img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            display: block;
+            width: 50%;
+            max-width: 350px;
+            background: #ff5361;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 30px;
+            padding: 14px 0;
+            margin: 60px auto;
+            font-size: 18px;
+            color: white;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .class {
+            flex-basis: 25%;
+            text-align: center;
+        }
+
+        .company .class img {
+            width: 300px;
+        }
+
+        .about{
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin-top: 50px;
+        }
+
+        .about p{
+            box-sizing: border-box;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 40px;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+    .footer{
+        text-align: center;
+        color: white;
+        background-color: teal;
+        margin-top: 40px;
+        height:40px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="photo_site_img/logo.png" alt="" height="50px">
+        </div>
+
+        <div class="menu">
+            <a href="">HOME</a>
+            <a href="">GALLARY</a>
+            <a href="">CARD</a>
+        </div>
+
+        <div class="button">
+            <a href="">UPLOAD</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <h1>LOYALITY FREE STOCK IMAGES</h1>
+        <input type="text" placeholder="browse HD pics">
+        <p>photography, pets, dogs, cars, games , party ,etc</p>
+    </div>
+
+    <div class="gallary">
+        <h2>Free stock image</h2>
+        <div class="block">
+            <div class="blockinner"><img src="photo_site_img/pic1.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic2.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic3.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic4.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic5.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic6.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic7.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic8.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic9.png" alt=""></div>
+            <div class="blockinner"><img src="photo_site_img/pic10.png" alt=""></div>
+        </div>
+        <a href=" " class="btn2">EXPLORE MORE</a>
+
+
+    </div>
+
+    <div class="customer">
+        <h2>Our customers</h2>
+        <div class="company">
+            <div class="class">
+                <img src="photo_site_img/microsoft.png" alt="">
+            </div>
+            <div class="class">
+                <img src="photo_site_img/facebook.png" alt="">
+            </div>
+            <div class="class">
+                <img src="photo_site_img/walmart.png" alt="">
+            </div>
+            <div class="class">
+                <img src="photo_site_img/adobe.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>about</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente corrupti vitae molestiae ex incidunt impedit, veniam, at voluptas officia qui minima, cum ad provident quo neque facere eius odio delectus soluta. Libero odio, quos vero aspernatur obcaecati explicabo accusantium error dignissimos, soluta cum natus alias modi cumque. Necessitatibus, accusamus quasi?</p>
+    </div>
+
+    <footer>
+        <div class="footer">
+            Copyright 2021
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+<!-- overflow -->
