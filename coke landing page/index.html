@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code landing page</title>
+    
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            list-style: none;
+            gap: 30px;
+            padding-right: 80px;
+            color: white;
+
+        }
+
+        .menu ul li {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .logo {
+            margin-left: 40px;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: -10%;
+            margin-top: 5px;
+        }
+
+        .text {
+            margin-left: 80px;
+            color: white;
+        }
+
+        .text h1 {
+            font-size: 120px;
+            font-weight: bolder;
+        }
+
+        .text h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 20px;
+        }
+
+        .text button {
+            background-color: white;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            width: 50%;
+            border-radius: 40px;
+            font-weight: bolder;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social {
+            flex-basis: 1%;
+            padding: 20px;
+        }
+
+        .social img {
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 10%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <div class="logo">
+                <img src="logo.png" alt="" width="200px">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>What's New</li>
+                    <li>Newsletter</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section1">
+
+        <div class="text">
+
+            <h2>That's What</h2>
+            <h1>I Like</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aspernatur, fugit suscipit possimus
+                harum, quis in dolorum sapiente maxime dignissimos tenetur quisquam! </p>
+
+            <button type="button">View all products</button>
+        </div>
+
+
+
+        <div class="can">
+
+            <img src="can.png" alt="">
+
+        </div>
+
+        <div class="social">
+            <img src="facebook.png" alt="" width="40px">
+            <img src="github.png" alt="" width="40px">
+            <img src="twitter.jpg" alt="" width="40px">
+        </div>
+
+
+    </section>
+</body>
+
+</html>
